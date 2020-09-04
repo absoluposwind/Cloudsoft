@@ -1,0 +1,612 @@
+header{
+height: 0px;
+margin: auto;
+width: 1920px;
+}
+main{
+height:3600px;
+width: 1920px;
+margin: auto;
+}
+footer{
+height: 400px;
+width: 1920px;
+margin: auto;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbox{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+
+.scrollmenu{
+    text-align: center;
+    width: 1920px;
+    height: 100px;
+    background-color: white;
+    border: solid 1px lightgray;
+    visibility: hidden;
+}
+
+.scrolltext{
+    font-weight: bold;
+    float: left;
+    text-align: center;
+    color: black;
+    padding-top: 1%;
+    padding-left: 8%;
+    font-size: 18px;
+}
+
+.scrollbtn{
+    padding-top: 1.5%;
+    float: right;
+    padding-right: 5%;
+
+}
+
+#scrollbtn1{
+color: dodgerblue;
+border: solid 1px dodgerblue;
+font-weight: bold;
+width: 200px;
+height: 30px;
+}
+#scrollbtn2{
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    border: solid 1px dodgerblue;
+    width: 200px;
+height: 30px;
+}
+
+.blockcs{
+    display: inline-block;
+}
+
+.nav-container{
+    width: max-content;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    margin: 0;
+    margin-left: 5%;
+    margin-right: 3%;
+    padding: 0;
+    background-color: white;
+    list-style-type: none;
+}
+.nav-container .submenu{
+      position: absolute;
+      text-align: center;
+      display: none;
+}
+
+.nav-container .submenu a:hover{
+    text-decoration: underline;
+    background-color: rgb(224, 224, 224);
+    border-bottom: none;
+}
+
+.nav-container li:hover .submenu{
+    display: block;
+}
+
+.nav-item,
+.submenu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.submenu a{
+    color: black;
+  padding: 20px 3px;
+  text-decoration: none;
+  display: block;
+  float: left;
+}
+
+#home{
+    padding: 1%;
+    float: left;
+    width: 180px;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+
+}
+#ent{
+    padding: 1%;
+    width: 180px;
+    float: left;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-item li{
+    list-style-type: none;
+    float: left;
+}
+
+
+.nav-item li a{
+    
+    display:block;
+    padding: 8px 8px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    border-right: 12px 36px;
+}
+.plan a:hover{
+    background-color: rgb(223, 223, 223);
+    text-decoration: underline;
+}
+
+.nav-item:hover .plan{
+    display: block;
+}
+.nav-item{
+    padding: 35px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nav-item a{
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    color:black;
+    
+}
+
+.nav-item a:hover{
+    border-bottom: 2px solid black;
+    padding-bottom:3px;
+    text-decoration: none;
+    text-decoration-color:black;
+}
+.compicon{
+border: none;
+padding: 35px;
+cursor: pointer;
+display: inline-block;
+}
+.mainview{
+    margin: 0;
+    padding: 0;
+    width: 1920px;
+    height: 644px;
+    display: block;
+}
+
+#clouddrive{
+    padding-left: 12%;
+    padding-right: 5%;
+    float: left;
+    font-size: 27pt;
+    height: 644px;
+}
+
+#mainimage{
+    float: left;
+    padding-left: 10px;
+}
+
+#clouddrivetext{
+    color: dodgerblue;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+#maintext{
+    text-align: left;
+}
+
+#mainloginbtn{
+        width: 180px;
+        height: 40px;
+        background-color: dodgerblue;
+        display: inline-block;
+        border: 0px;
+        border-radius: 1px;
+        font-weight: bold;
+        top: 1px;
+        color: white;
+        cursor: pointer;
+        font-size: 11pt;
+}
+
+#mainregisterbtn{
+    width: 180px;
+    height: 40px;
+    background-color: white;
+    display: inline-block;
+    border: 0px;
+    border-radius: 1px;
+    font-weight: bold;
+    top: 1px;
+    color: dodgerblue;
+    cursor: pointer;
+    border: solid dodgerblue 2px;
+    font-size: 11pt;
+}
+
+#planhref{
+    font-size: 13pt;
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: bold;
+}
+
+.mainview2{
+    text-align: center;
+    height: 500px;
+    margin: 0;
+    padding:0;
+    align-items: center;
+    justify-content: center;
+}
+
+#accesstext{
+    font-size: 30pt;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5%;
+}
+.mainview2 a{
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+#accessbigtext{
+    font-size: 25pt;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.accessbox{
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.access{
+float: left;
+padding: 3%;
+vertical-align: middle;
+}
+.backup{
+float:left;
+padding: 3%;
+vertical-align: middle;
+}
+.share{
+float:left;
+padding: 3%;
+vertical-align: middle;
+}
+
+#detailtext{
+    font-size: 11pt;
+    font-weight: 500;
+}
+
+.sharebox{
+    padding-left: 5%;    
+    font-size: 20pt;
+    height: 518px;
+}
+
+#shareimage{
+    height: 518px;
+    padding-top: 0;
+    margin-top: 0;
+    float: left;
+}
+.sharetext{
+    height: 518px;
+    padding-left: 10%;
+    float: left;
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+#sharedetailtext{
+    font-size: 12pt;
+    font-weight: 500;
+    float: left;
+}
+
+.cloud24box{
+    height: 654px;
+    padding-left: 5%;
+    padding-top: 12%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25pt;
+}
+
+#cloud24text{
+    height: 654px;
+    padding-right: 10%;
+    float: left;
+    text-align: left;
+}
+#cloud24detailtext{
+    font-size: 12pt;
+    font-weight: 500;
+    float: left;
+    text-align: left;
+}
+#cloud24image{
+    float: left;
+}
+
+#cloud24detailhref{
+    font-size: 12pt;   
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.otherfunction{ 
+    width: 1920px;
+    padding-top: 8%;
+    text-align: center;
+    padding-bottom: 5%;
+    margin: 0;
+    float: left;
+}
+
+.otherfunctiontext{
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.otherbox{
+    height: 250px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    vertical-align: center;
+}
+#othertitle{
+    text-align: center;
+    font-size: 28pt;
+}
+.otherbox a{
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+#accesstext{
+    text-align: center;
+    font-size: 12pt;
+}
+
+.requestbox{
+    margin-top: 0.1%;
+    float: left;
+    padding: 2%;
+    font-size: 13pt;
+}
+
+.scanbox{
+    margin-top: -0.8%;
+    float: left;
+    padding: 2%;
+    font-size: 13pt;
+}
+
+.keeperbox{
+    margin-top: -0.2%;
+    float: left;
+    padding: 2%;
+    font-size: 13pt;
+}
+
+#planbtn{
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    display: inline-block;
+    border: 0px;
+    border-radius: 1px;
+    font-weight: bold;
+    top: 1px;
+    color: dodgerblue;
+    cursor: pointer;
+    font-size: 11pt;
+    text-align: center;
+    margin-right: 1%;
+}
+
+#freebtn{
+    margin-left: 1%;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    display: inline-block;
+    border: 0px;
+    border-radius: 1px;
+    font-weight: bold;
+    top: 1px;
+    color:dodgerblue;
+    cursor: pointer;
+    font-size: 11pt;
+}
+
+.start{
+    background-color: dodgerblue;
+    text-align: center;
+    width: 1920px;
+    height: 300px;
+    margin: 0;
+    float: left;
+}
+.starttitle{
+    padding-right: 3%;
+    padding-top: 2%;
+    font-size: 25pt;
+    font-weight: bold;
+    color: white;
+    float: center;
+}
+.startbtn{
+    padding-right: 3%;
+    text-align: center;
+    float: center;
+}
+
+#freebtn:hover{
+    box-shadow: 1px 1px 20px rgb(17, 106, 196);
+}
+
+#planbtn:hover{
+    box-shadow: 1px 1px 20px rgb(17, 106, 196);
+}
+
+.followbox{
+    background-color: white;
+    text-align: left;
+    float: left;
+    width: 1920px;
+    height: 180px;
+}
+
+.followtext{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 12%;
+    margin-top: 3%;
+    float: left;
+}
+.followlink{
+    float: left;
+    margin-top: 3.8%;
+}
+
+.bottombox{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.bottomboxdevide{
+    width: 1700px;
+}
+.newfunction{
+    margin-left: 3%;
+    float: left;
+    width: 190px;
+    padding: 2%;
+}
+.store{
+    margin-left: 3%;
+    float: left;
+    padding: 2%;
+}
+.education{
+    margin-left: 3%;
+    float: left;
+    padding: 2%;
+}
+.enterprise{
+    margin-left: 3%;
+    float: left;
+    padding: 2%;
+}
+.developer{
+    margin-left: 3%;
+    float: left;
+    padding: 2%;
+}
+.aboutcompany{
+    margin-left: 3%;
+    float: left;
+    padding: 2%;
+}
+
+.bottombox a{
+    text-decoration: none;
+    color: gray;
+    font-size: 9pt;
+}
+.bottombox p{
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+}
+
+.bottombox a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.detailbox{
+    width: 1920px;
+    height: 50px;
+    padding-top: 3%;
+}
+
+.language img{
+    vertical-align: top;
+}
+.language{
+    float: left;
+    padding-left: 11%;
+    padding-right: 25%
+}
+
+.copyright{
+    margin-left: 22%;
+    float: left;
+}
+.detailbox a{
+    text-decoration: none;
+    color: gray;
+    font-size: 8pt;
+    height: 23px;
+}

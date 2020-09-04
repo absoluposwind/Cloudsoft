@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만을 위한 클라우드 저장소-CloudDrive</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+<body> 
+    <script>
+        onscroll = function() {
+  var nVScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    if(nVScroll > 775) {
+        $(".scrollmenu").css("position", "fixed");
+        $(".scrollmenu").css("visibility","visible");
+    }
+    else {
+    $(".scrollmenu").css("position", "relative");
+    $(".scrollmenu").css("visibility","hidden");
+}   
+};
+    </script>
+ <header>
+<div class="scrollmenu">
+    <div class="scrolltext">
+    <p>CloudDrive</p>
+    </div>
+    <div class="scrollbtn">
+            <input type="button" id="scrollbtn1" value="플랜 및 가격 보기">
+            <input type="button" id="scrollbtn1" value="무료 등록" onclick="location.href='join.html'">
+            <input type="button" id="scrollbtn2" value="로그인" onclick="location.href='id.html'">
+    </div>
+</div>
+</header>
+<main>
+    <div class="topbox">
+        <nav>
+            <ul class="nav-container">
+                <li class="compicon"><a href="home.html"><img src="image/Icon2.png"></a></li>
+                <li class="nav-item">|</li>
+                <li class="nav-item"><a href="#">Cloud 24</a></li>
+                <li class="nav-item"><a href="home.html">CloudDrive</a></li>
+                <li class="nav-item"><a href="#">Bussiness</a></li>
+                <li class="nav-item"><a href="#">플랜 및 가격</a>
+                    <ul class="submenu">
+                        <li><a href="#"id ="home">가정용</a></li></br>
+                        <li><a href="#" id="ent">기업용</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="detail.html">다양한 기능</a>
+                    <ul class="submenu">
+                        <li><a href="#"id ="home">PC 폴더 백업</a></li></br>
+                        <li><a href="#" id="ent">개인 맞춤 서비스</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"></li>
+                <li class="nav-item"><a href="#"></li>
+                    <li class="nav-item"><a href="#"></li>
+                <li class="nav-item"><a href="#"><img src="image/search.png"></a></li>
+                <li class="nav-item"><a href="id.html"><img src="image/user.png"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="blockcs">
+<div class="mainview">
+    <div id="clouddrive">
+    <form action="#">
+    </br></br></br>
+        <a id="clouddrivetext">CloudDrive</a></br>
+        <a id="maintext">CloudDrive에 사진과 문서를 저장하고</br> 모든 기기에서 액세스 하세요.</a></br></br>
+        <input type="button" value="로그인" id="mainloginbtn" onclick="location.href='id.html'">
+        <input type="button" value="무료 등록" id="mainregisterbtn" onclick="location.href='join.html'"></br>
+        <a href="#" id="planhref">플랜별 가격보기 ></a>
+    </form>
+    </div>
+    <div id="mainimage">
+        <img src="image/background2.jpg">
+    </div>
+</div>
+<div class="mainview2">
+    <div id="accesstext">
+        <a id="accessbigtext">어디서나 모든 파일을 간편하게 공유</a>
+    </div>
+    <div class="accessbox">
+    <div class="access">
+        <img src="image/phone_2.png"></br></br>
+        <a>실시간 액세스</a></br>
+        <a id="detailtext">어디서나 모든 디바이스에서 자유롭게 파일에 엑세스하고</br> 편집 및 공유하세요.</a>
+    </div>
+    <div class="backup">
+        <img src="image/lock_2.png"></br></br>
+        <a>백업 및 보호</a></br>
+        <a id="detailtext">디바이스가 파손되어도, CloudDrive에 저장된 사진과</br> 자료는 잃어버릴 걱정이 없습니다.</a>
+    </div>
+    <div class="share">
+        <img src="image/share_2.png"></br></br>
+        <a>파일 공유 및 공동작업</a></br>
+        <a id="detailtext">동기화하여 직장 동료와 문서를 공유하고, 앱에서</br> 실시간으로 공동 작업하세요.</a>
+    </div>
+</div>
+</div>
+<div class="sharebox">
+    <div id="shareimage">
+        <img src="image/access1.jpg">
+    </div>
+    <div class="sharetext">
+    </br></br></br></br>
+        <a>공유 및 공동 작업</a></br>
+        <a id="sharedetailtext"></br>사진, 각종 문서들을 직장 동료 및 지인들과 공유하세요. 
+            더 이상 자료를 공유하기 위해</br>별도의 스토리지가 필요하지 않습니다. 이메일이나 연락처로 링크를 보내기만 하면 됩니다.</a>
+    </div>
+</div>
+<div class="cloud24box">
+    <div id="cloud24text">
+    </br></br></br></br></br>
+        <a>Cloud 24로 더 효율적인 업무 수행</a></br>
+        <a id=cloud24detailtext></br>최신 버전의 Word, Cell 및 다양한 Task 앱으로 더 효율적인 업무를 수행하세요. CloudDrive는</br> Cloud24 사용자를 위해 대용량 클라우드 저장소, 문서 암호화를 비롯한 최상의 업무환경을 제공합니다.</a></br>
+        <a href="#" id="cloud24detailhref">자세한 정보 ></a>
+    </div>
+    <div id="cloud24image">
+        <img src="image/cloud24_1.jpg">
+    </div>
+</div>
+<div class="otherfunction">
+        <div class="otherfunctiontext">
+        <a id="othertitle">내 삶을 더 쉽고 편하게 만들어 주는 기능</a></br></br>
+        </div>
+            <div class="otherbox">
+        <div class="requestbox">
+            <img src="image/disk_2.png"></br></br>
+            <a>클라우드 기반 파일</a></br>
+            <a id="detailtext">Windows 10에서는 디스크 공간을 사용하지 않고도 CloudDrive계정 내</br> 모든 파일에 액세스할 수 있습니다.</a>
+        </div>
+        <div class="scanbox">
+            <img src="image/document.png"></br></br>
+            <a>비밀 문서 작성</a></br>
+            <a id="detailtext">스마트폰과 태블릿PC를 사용하여 나만의 계획, 기록 등을 비밀 문서로</br> CloudDrive에 보관할 수 있습니다.</a>
+        </div>
+        <div class="keeperbox">
+            <img src="image/shield_2.png"></br></br>
+            <a>업무용 중요 보관소</a></br>
+            <a id="detailtext">사내 중요 문서들과 보고서는 CloudDrive 중요 보관소의 강화된</br> 보안 계층을 사용해 저장하세요.</a>
+        </div>
+        </div>
+</div>
+
+<div class="start">
+    <div class="starttitle">
+        <p>CloudDrive 시작</p>
+    </div>
+    <div class="startbtn">
+    <input type="button" id="planbtn" value="플랜 및 가격 보기">
+    <input type="button" id="freebtn" value="무료 등록"onclick="location.href='join.html'">
+    </div>
+</div>
+<div class="followbox">
+    <div class="followtext">
+        <p>Cloud 24 팔로우하기</p>&nbsp;&nbsp;
+    </div>
+    <div class="followlink">
+        <a href="https://twitter.com/?lang=ko"><img src="image/twitter_2.png"></a>
+        <a href="https://www.instagram.com/?hl=ko"><img src="image/instagram_2.png"></a>
+    </div>
+</div>
+</div>
+</main>
+<footer>
+    <div class="bottombox">
+        <div class="bottomboxdevide">
+<div class="newfunction">
+    <p>새로운 기능</p></br>
+    <a href="#">Cloud 24</a></br></br>
+    <a href="#">Sunnybox X</a></br></br>
+    <a href="#">Sunnybox XI</a></br></br>
+    <a href="#">Sunnybox Slim</a></br></br>
+</div>
+<div class="store">
+    <p>Cloudsoft Store</p></br>
+    <a href="#">계정 프로필</a></br></br>
+    <a href="#">다운로드 센터</a></br></br>
+    <a href="#">Cloudsoft user 지원</a></br></br>
+    <a href="#">주문 조회</a></br></br>
+</div>
+<div class="education">
+    <p>교육</p></br>
+    <a href="#">학생용 Cloud 24</a></br></br>
+    <a href="#">교육기관용 CloudDrive</a></br></br>
+    <a href="#">교육분야의 Cloud System</a></br></br>
+    <a href="#">교육 할인 혜택</a></br></br>
+</div>
+<div class="enterprise">
+    <p>기업</p></br>
+    <a href="#">기업용 CloudDrive</a></br></br>
+    <a href="#">규모별 기업</a></br></br>
+    <a href="#">정부기관</a></br></br>
+    <a href="#">의료서비스</a></br></br>
+</div>
+<div class="developer">
+    <p>개발자</p></br>
+    <a href="#">Cloudsoft FastCode</a></br></br>
+    <a href="#">Rainy 개발자 센터</a></br></br>
+    <a href="#">Rainy 개발자 프로그램</a></br></br>
+    <a href="#">문의 사항</a></br></br>
+</div>
+<div class="aboutcompany">
+    <p>Cloudsoft</p></br>
+    <a href="#">채용 정보</a></br></br>
+    <a href="#">Rainy 정보</a></br></br>
+    <a href="#">회사 소개</a></br></br>
+    <a href="#">약도</a></br></br>
+</div>
+</div>
+</div>
+<div class="detailbox">
+    <div class="language">
+<a href=""><img src="image/earth_2.png">한국어(대한민국)</a>
+    </div>
+    <div class="copyright">
+        <a href="#">Cloudsoft에 문의</a>&nbsp;&nbsp;&nbsp;
+        <a href="#">개인정보처리방침</a>&nbsp;&nbsp;&nbsp;
+        <a href="#">사용약관</a>&nbsp;&nbsp;&nbsp;
+        <a href="#">ⓒ Cloudsoft 2020</a>
+    </div>
+</div>
+</footer>
+
+</body>
+</html>
